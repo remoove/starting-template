@@ -7,11 +7,11 @@
       <h1 class="pt-3 pb-3">Персонажи Marvel</h1>
 
       <app-modal :character="character"/>
-      <spinner v-if="loading"/> 
+      <spinner v-if="loading"/>
 
       <div class="row">
         <template v-for="(character, i) in characters">
-          <div class="card mb-3 col-sm-12 col-md-6 col-lg-4">
+          <div :key="i" class="card mb-3 col-sm-12 col-md-6 col-lg-4">
             <div class="row gt-0">
               <div class="col-md-4">
                 <img
