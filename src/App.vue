@@ -72,7 +72,7 @@ export default {
     }
   },
   computed: {
-    character: function () {
+    character() {
       return this.characters[this.characterIndex] || null;
     }
   },

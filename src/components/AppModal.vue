@@ -13,12 +13,12 @@
             <span class="text-muted">{{ character.modified }}</span>
             <h5 class="pt-3">Описание:</h5>
             <span>
-              {{character.description}}
-                        </span>
+              {{ character.description }}
+            </span>
 
             <h5 class="pt-3">Комиксы:</h5>
             <ul v-for="(el, i) of character.comics">
-              <li :key="i">{{el.name}}</li>
+              <li :key="i">{{ el.name }}</li>
             </ul>
           </div>
         </div>
@@ -31,10 +31,10 @@
 </template>
 
 <script>
-    export default {
-        name: "AppModal",
-        props: ["character"]
-    }
+export default {
+  name: "AppModal",
+  props: ["character"]
+}
 </script>
 
 <style scoped>
